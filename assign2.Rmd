@@ -8,7 +8,38 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-data=read.csv('data.csv')
+dt=read.csv('data.csv')
+dt[is.na(dt)] = 0
+
+data.h0=dt[,'Q5'][dt[,'Q5']!=0]
+data.h1=dt[,'Q6'][dt[,'Q6']!=0]
+
+# acc.h0=data.h0
+# acc.h0[acc.h0!=1]=0
+# 
+# acc.h1=data.h1
+# acc.h1[acc.h1!=1]=0
+
+# df=rbind(table(data.h0==1),table(data.h1==1))
+# rownames(df)=c('monochrome','colour')
+
+
+barplot(table(data.h0),names.arg = c('Despacito', 'Something Just Like This', 'Same'),main = 'Distribution of answers of uncolored graph', density=c(5,10,20,30) , angle=c(0,45,90,11) , col="brown")
+
+barplot(table(data.h1),names.arg = c('Despacito', 'Something Just Like This', 'Same'),main = 'Distribution of answers of colored graph', density=c(5,10,20,30) , angle=c(0,45,90,11) , col="lightblue")
+
+
+# plot(density(dt$Duration..in.seconds.[dt$Q5==1]))
+# lines(density(dt$Duration..in.seconds.[dt$Q6==1]),col='red')
+library(lattice)
+mono=dt$Duration..in.seconds.[dt$Q5==1]
+color=dt$Duration..in.seconds.[dt$Q6==1]
+densityplot(~mono+color,
+            plot.points=F,ref=T,auto.key = list(space = "right"),
+            main='Density Plot for Response Time',
+            xlab='Time(sec)')
+
+t.test(mono,color,var.equal = F)
 
 
 
