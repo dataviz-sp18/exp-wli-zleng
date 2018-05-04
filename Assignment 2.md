@@ -42,4 +42,10 @@ The distribution of answers of the two groups are presented below. The correct a
 
  ## Conclusion
 Based on the data we collected, participants with the colored graph have significantly higher accuracy rate. However, both the color group and uncolar group have similar response time. As a result, our experiment does indicate that colouring helps people’s graphical perception, but more sophisticated testing is required to determine whether using colours can reduce the participant’s response time.  
-There are three limitations: The sample size is not representative. Due to time and funding constraint, only 185 valid data is collected. A larger sample population may speaks for a different result.No penalty for wrong answer, thus the participants have no incentive to spend time to choose the right answer. This may be the reason of the fact that the response time between the control and testing group show no significant differences.The number of testing questions is limited. Only one group of graphs is included in our questionnaire that we are not able to distinguish whether the answer is under prudent thoughts. Also, the provided testing coloured map is painted in red and orange, there may exists participants who are more sensitive to cold colours than warm colours. The result can be biased.
+
+There are three limitations: 
+
+1. The sample size is not representative. Due to time and funding constraint, only 185 valid data is collected. A larger sample population may speaks for a different result.
+2. No penalty for wrong answer, thus the participants have no incentive to spend time to choose the right answer. This may be the reason of the fact that the response time between the control and testing group show no significant differences.
+3. The number of testing questions is limited. Only one group of graphs is included in our questionnaire that we are not able to distinguish whether the answer is under prudent thoughts. Also, the provided testing coloured map is painted in red and orange, there may exists participants who are more sensitive to cold colours than warm colours. The result can be biased.
+
